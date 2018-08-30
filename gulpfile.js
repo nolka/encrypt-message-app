@@ -7,8 +7,6 @@ elixir(function (mix) {
         .browserify('app.js')
         .scripts(['app.js']);
 });
-//kek
-
 
 elixir(function(mix){
     mix

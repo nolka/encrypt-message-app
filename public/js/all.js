@@ -8,16 +8,22 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 
+import eventbus from './plugins/eventbus';
+import MsgWidget from './components/MsgWidget.vue';
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+
 window.onload = function () {
-    Vue.component('msg-widget', require('./components/MsgWidget.vue'));
+    Vue.use(eventbus);
     const app = new Vue({
         el: '#app',
+        components: {
+            MsgWidget
+        }
     });
 }
 

@@ -13,7 +13,6 @@ use App\Http\Controllers\Controller;
 use App\Model\Message;
 use App\Repository\MessageRepository;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\URL;
 
 class MessageController extends Controller
 {
